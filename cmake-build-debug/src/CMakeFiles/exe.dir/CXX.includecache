@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Customer.h
+string
+-
+vector
+-
+Rental.h
+/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Rental.h
+
+/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Movie.h
+string
+-
+
+/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Rental.h
+Movie.h
+/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Movie.h
+
+/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/main.cpp
+iostream
+-
+Customer.h
+/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Customer.h
+

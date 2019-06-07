@@ -1,4 +1,4 @@
-# Install script for directory: /home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5
+# Install script for directory: /home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,6 +37,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/cmake-build-debug/src/cmake_install.cmake")
+  include("/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/cmake-build-debug/test/cmake_install.cmake")
+
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()
@@ -45,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
