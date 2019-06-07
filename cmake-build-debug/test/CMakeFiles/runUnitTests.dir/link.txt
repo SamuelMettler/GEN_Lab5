@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/runUnitTests.dir/gtest.cpp.o CMakeFiles/runUnitTests.dir/CustomerTest.cpp.o  -o runUnitTests ../lib/libgtestd.a ../lib/libgmockd.a ../src/libcore.a ../lib/libgtestd.a -lpthread 
