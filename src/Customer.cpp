@@ -22,8 +22,7 @@ string Customer::statement()
         frequentRenterPoints = this->addFrequentRenterPoints(frequentRenterPoints, each);
 
         // show figures for this rental
-        result << "\t" << each.getMovie().getTitle() << "\t"
-               << each.getAmount() << "\n";
+        result << each.toString();
         totalAmount += each.getAmount();
     }
     // add footer lines
