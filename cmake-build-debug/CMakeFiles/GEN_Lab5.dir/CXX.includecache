@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Customer.cpp
+sstream
+-
+vector
+-
+Customer.h
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Customer.h
+
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Customer.h
+string
+-
+vector
+-
+Rental.h
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Rental.h
+
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Movie.cpp
+Movie.h
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Movie.h
+
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Movie.h
+string
+-
+
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Rental.h
+Movie.h
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Movie.h
+
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/main.cpp
+iostream
+-
+Customer.h
+/home/sam/Documents/HEIG/2eme_Annee/2eme_Semestre/GEN/lab/GEN_Lab5/Customer.h
+
