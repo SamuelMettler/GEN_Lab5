@@ -19,7 +19,7 @@ string Customer::statement()
     for ( ; iter != iter_end; ++iter ) {
         Rental each = *iter;
 
-        frequentRenterPoints = this->addFrequentRenterPoints(frequentRenterPoints, each);
+        frequentRenterPoints += each.addFrequentRenterPoints();
 
         // show figures for this rental
         result << each.toString();
@@ -32,14 +32,3 @@ string Customer::statement()
     return result.str();
 }
 
-
-int Customer::addFrequentRenterPoints(int frequentRenterPoints, Rental each) {
-
-    // add frequent renter points
-    frequentRenterPoints++;
-    // add bonus for a two day new release rental
-    if ( ( each.getMovie().getPriceCode() == Movie::NEW_RELEASE )
-         && each.getDaysRented() > 1 ) frequentRenterPoints++;
-
-    return frequentRenterPoints;
-}

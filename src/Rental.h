@@ -13,6 +13,7 @@ public:
     const Movie& getMovie() const;
     double getAmount();
     std::string toString();
+    int addFrequentRenterPoints();
 
 private:
     Movie _movie;
@@ -56,6 +57,17 @@ toString() {
     std::ostringstream result;
     result << "\t" << this->getMovie().getTitle() << "\t" << this->getAmount() << "\n";
     return result.str();
+}
+
+inline int Rental::
+addFrequentRenterPoints() {
+    // add frequent renter points
+    int frequentRenterPoints = 1;
+    // add bonus for a two day new release rental
+    if ( ( this->getMovie().getPriceCode() == Movie::NEW_RELEASE )
+         && this->getDaysRented() > 1 ) frequentRenterPoints++;
+
+    return frequentRenterPoints;
 }
 
 #endif // RENTAL_H
