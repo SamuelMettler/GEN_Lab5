@@ -1,3 +1,5 @@
+#include <utility>
+
 // Movie.h
 #ifndef MOVIE_H
 #define MOVIE_H
@@ -5,34 +7,35 @@
 
 class Movie {
 public:
-    static const int CHILDRENS   = 2;
-    static const int REGULAR     = 0;
+
+    // ADD WHEN A NEW PRICE CODE IS CREATED
+    static const int REGULAR = 0;
+    static const int CHILDRENS = 2;
     static const int NEW_RELEASE = 1;
 
-    Movie( const std::string& title, int priceCode = REGULAR );
-
-    int getPriceCode() const;
-    void setPriceCode( int arg );
     std::string getTitle() const;
+    int getPriceCode();
+    virtual double getPrice(int daysRented) = 0;
 
 private:
     std::string _title;
-    int _priceCode;
+    int _price_code;
+
+protected:
+    Movie(std::string title, int priceCode);
 };
 
 inline Movie::
-Movie( const std::string& title, int priceCode )
-        : _title( title )
-        , _priceCode( priceCode )
+Movie( std::string  title, int priceCode )
+        : _title(std::move( title )), _price_code(priceCode)
 {}
-
-inline int Movie::
-getPriceCode() const { return _priceCode; }
-
-inline void Movie::
-setPriceCode( int arg ) { _priceCode = arg; }
 
 inline std::string Movie::
 getTitle() const { return _title; }
+
+
+inline int Movie::getPriceCode() {
+    return _price_code;
+}
 
 #endif // MOVIE_H

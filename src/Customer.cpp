@@ -23,6 +23,7 @@ string Customer::statement()
 
         // show figures for this rental
         result << each.toString();
+        // Get amount for each rental
         totalAmount += each.getAmount();
     }
     // add footer lines
