@@ -1,6 +1,9 @@
 #include <gtest/gtest.h>
 #include <iostream>
 #include "../src/Customer.h"
+#include "../src/MovieChildrens.h"
+#include "../src/MovieNewRelease.h"
+#include "../src/MovieRegular.h"
 
 TEST(customer_test, customer_test_name_Test) {
     Customer *customer = new Customer("Samouel");
@@ -9,9 +12,9 @@ TEST(customer_test, customer_test_name_Test) {
 
 TEST(customer_test, customer_test_rental_Test) {
     Customer *customer = new Customer("Samouel");
-    customer->addRental( Rental( Movie("Karate Kid"), 7));
-    customer->addRental( Rental( Movie( "Avengers: Endgame", Movie::NEW_RELEASE ), 5));
-    customer->addRental( Rental( Movie("Snow White", Movie::CHILDRENS), 3 ));
+    customer->addRental( Rental( new MovieRegular("Karate Kid"), 7));
+    customer->addRental( Rental( new MovieNewRelease( "Avengers: Endgame"), 5));
+    customer->addRental( Rental( new MovieChildrens("Snow White"), 3 ));
 
     ASSERT_EQ("Rental Record for Samouel\n"
               "\tKarate Kid\t9.5\n"
