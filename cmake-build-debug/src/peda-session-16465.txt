@@ -1,0 +1,5 @@
+break /home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Movie.h:38
+break /home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/MovieRegular.h:18
+break /home/mbonjour/HEIG/annee2/semestre_2/GEN/Labo/GEN_Lab5/src/Rental.h:36
+
+set exec-wrapper The wrapper for running programs is \
